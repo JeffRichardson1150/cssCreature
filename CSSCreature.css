@@ -1,0 +1,229 @@
+.CSSCreature {
+    position: relative;
+    margin-top: 180px;
+    margin-left: 100px;
+    animation: moveTheWildThing 10s ease-in-out 0s infinite alternate;
+}
+
+body {
+    background-image: url(https://drive.google.com/uc?id=1fAlOc3rdMXivacqltw1DY-kBgt5xBw5U);
+    background-size: 100%;
+	background-position: 0 10%;
+	background-repeat: no-repeat;
+	padding-top: 10%
+    /* background-blend-mode: normal;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.head {
+/*   margin: 50px;
+*/
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: solid 2px black;
+    background-color: rgb(58, 31, 10);
+    border-radius: 50%;
+}
+
+.face {
+    position: relative;
+    margin: 22% 14%;
+    width: 73%;
+    height: 73%;
+    border: solid 2px black;
+    background-color: rgb(240, 178, 159);
+    border-radius: 50%;
+}
+
+
+.leftEye {
+    position: relative;
+    margin: 15% 8%;
+    width: 30%;
+    height: 35%;
+    border: solid 2px black;
+    background-color: yellow;
+    border-radius: 50%;
+}
+.leftEyeInner {
+    position: relative;
+    margin: 15% 8%;
+    width: 15px;
+    height: 15px;
+    border: solid 2px black;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.rightEye {
+    /*    position: relative;  */
+    margin: -53% 60%; 
+    width: 30%;
+    height: 35%;
+    border: solid 2px black;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.rightEyeInner {
+    position: relative;
+    margin: 15% 8%;
+    width: 15px;
+    height: 15px;
+    border: solid 2px black;
+    background-color: black;
+    border-radius: 50%;
+}
+.nose {
+    margin: 38% 23%;
+    border-bottom: 50px solid rgb(243, 93, 93);
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+    width: 30px;
+    border-radius: 10px;
+}
+
+.mouth {
+    width: 85px;
+    height: 20px;
+    border: solid 1px black;
+    border-radius: 0 0 45px 45px;
+    margin: -58px -70px;
+    position: relative;
+    left: 100px;
+    top: 10px;
+    background-color: black;
+}
+
+#tooth1 {
+    width: 0;
+      height: 8px;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid white;
+    position: relative;
+    top: 0px;
+    left: 10px;
+  }
+#tooth2 {
+    width: 0;
+      height: 8px;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid white;
+    position: relative;
+    top: -16px;
+    left: 60px;
+  }
+
+#hornLeft {
+    width         : 0;
+    height        : 0;
+    transform     : rotate(230deg);    
+    border-left   : -10px solid transparent;
+    border-right  : 100px solid transparent;  
+    border-bottom : 40px solid white;
+    position: relative;
+    top: -120px;
+    left: -75px;
+}
+#hornRight {
+    width         : 0;
+    height        : 0;
+    transform     : rotate(295deg);    
+    border-left   : 10px solid transparent;
+    border-right  : 100px solid transparent;  
+    border-bottom : 40px solid white;
+    position: relative;
+    top: -175px;
+    left: 90px;
+}
+
+
+.bodyTop {
+    height: 120px;
+    width: 240px;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    /* border: 10px black; */
+    margin: -10px -12px;
+    /* background-image: repeating-linear-gradient(orange 20%, yellow 20%); */
+    background-color: orange;
+  }
+
+.bodyBottom {
+    height: 120px;
+    width: 240px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    /* border: 10px black; */
+    margin: -10px -12px;
+    /* background-image: repeating-linear-gradient(orange 20%, yellow 20%); */
+    background-color: green;
+  }
+
+.leftArm {
+	width: 50px;
+	height: 80px;
+	border-bottom: solid 40px rgb(58, 31, 10);
+	background-color: orange;
+	position: relative;
+	top: -240px;
+    left: -70px;
+    transform: rotate(120deg);
+	/* animation: waveLeftArm 0.5s ease-in-out 0.5s infinite alternate; */
+}
+
+.rightArm {
+	width: 50px;
+	height: 80px;
+	border-bottom: solid 40px rgb(58, 31, 10);
+	background-color: orange;
+	position: relative;
+	top: -335px;
+    left: 230px;
+    transform: rotate(-90deg);
+	/* animation: waveLeftArm 0.5s ease-in-out 0.5s infinite alternate; */
+}
+
+.leftLeg {
+	width: 50px;
+	height: 110px;
+	border-bottom: solid 40px rgb(58, 31, 10);
+	background-color: green;
+	position: relative;
+	top: -285px;
+	left: 35px;
+	animation: walkwalk 0.5s ease-in-out 0.5s infinite alternate;
+}
+
+.rightLeg {
+	width: 50px;
+	height: 110px;
+	border-bottom: solid 40px rgb(58, 31, 10);
+	background-color: green;
+	position: relative;
+	top: -435px;
+	left: 125px;
+	animation: walkwalk 0.5s ease-in-out 1s infinite alternate;
+}
+
+@keyframes moveTheWildThing {
+	from {left: 0px;}
+	to {left: 500px;}
+}
+
+@keyframes walkwalk {
+	from {transform: rotateX(0deg);}
+	to {transform: rotateX(40deg);}
+}
+
+/* Added after submitted
+*/
+@keyframes waveLeftArm {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(40deg);}
+}
